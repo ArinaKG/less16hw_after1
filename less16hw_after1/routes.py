@@ -1,5 +1,5 @@
 import json, db
-from app import models
+from less16hw_after1 import models
 from flask import current_app as app, request, jsonify
 
 @app.route('/', methods=['GET', 'POST'])
@@ -19,6 +19,7 @@ def users():
 
         for user in models.User.query.all():
             result.append(user.to_dict())
+            result = []
 
         return jsonify(result), 200
 
@@ -64,5 +65,3 @@ def page_order_by_id(id_order):
     else:
         Utils().delete_data_in_bd(Order, id_order)
         return "Заказ удален"
-
-

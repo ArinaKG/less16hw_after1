@@ -1,5 +1,8 @@
 import json
-from . import models, db
+from less16hw_after1 import models
+
+db = SQLAlchemy()
+
 
 def load_data(filename):
     json_data = []
