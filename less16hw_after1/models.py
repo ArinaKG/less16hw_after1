@@ -7,9 +7,9 @@ class User(db.Model):
     first_name = db.Column(db.String(100))
     last_name = db.Column(db.String(100))
     age = db.Column(db.Integer)
-    email = db.column(db.String(100))
+    email = db.Column(db.String(100))
     role = db.Column(db.String(100))
-    phone = db.column(db.String(100))
+    phone = db.Сolumn(db.String(100))
 
     def to_dict(self):
         return {
