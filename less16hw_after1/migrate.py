@@ -1,8 +1,5 @@
 import json
 from less16hw_after1 import models
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
 
 
 def load_data(filename):
