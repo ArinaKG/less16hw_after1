@@ -1,4 +1,9 @@
-from Flask import flask
+from flask import Flask, app, request, jsonify
+from database import db
+import models
+import migrate
+
+app = Flask(__name__)
 
 
 def create_app():
@@ -9,7 +14,6 @@ def create_app():
     with app.app_context():
         db.init_app(app)
         db.create_all()
-        from . import migrate
         migrate.load_users('data/users.json')
 
     app.app_context().push()

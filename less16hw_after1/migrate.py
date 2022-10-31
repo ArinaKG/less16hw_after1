@@ -1,5 +1,5 @@
-import json
-from less16hw_after1 import models
+import models
+from database import db
 
 
 def load_data(filename):

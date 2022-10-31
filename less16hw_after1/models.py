@@ -1,4 +1,4 @@
-from migrate import db
+from database import db
 
 
 class User(db.Model):
@@ -9,7 +9,7 @@ class User(db.Model):
     age = db.Column(db.Integer)
     email = db.Column(db.String(100))
     role = db.Column(db.String(100))
-    phone = db.Сolumn(db.String(100))
+    phone = db.Column(db.String(100))
 
     def to_dict(self):
         return {
