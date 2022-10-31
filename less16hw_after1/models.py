@@ -11,6 +11,7 @@ class User(db.Model):
     role = db.Column(db.String(100))
     phone = db.Column(db.String(100))
 
+
     def to_dict(self):
         return {
             "id": self.id,
