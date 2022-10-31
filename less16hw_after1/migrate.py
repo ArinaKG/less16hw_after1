@@ -18,3 +18,4 @@ def load_users(filename):
         db.session.add(new_user)
 
     db.session.commit()
+

@@ -12,6 +12,7 @@ class User(db.Model):
     phone = db.Column(db.String(100))
 
 
+
     def to_dict(self):
         return {
             "id": self.id,

@@ -67,7 +67,6 @@ def user_function(uid):
         user = models.User.query.get(uid)
         db.session.delete(user)
         db.session.commit()
-
         return "Пользователь удален"
 
 
